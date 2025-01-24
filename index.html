@@ -9,13 +9,38 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background: #f4f4f4; /* Optional: Background color for the page */
+        }
+        .container {
+            text-align: left; /* Align all text to the left */
+            width: 90%; /* Adjust width percentage for smaller screens */
+            max-width: 1200px; /* Set maximum width */
+            padding: 20px;
+            background: white; /* Optional: Background color for content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            border-radius: 8px; /* Optional: Rounded corners */
         }
         header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            text-align: center;
+            background: url('./images/header-background.png') no-repeat center center;
+            background-size: contain; /* Ensure the image fits completely */
+            background-color: #f4f4f4; /* Fallback background color */
+            color: black;
+            text-align: center; /* Keep header text centered */
+            padding: 50px 15px;
+            height: 400px; /* Set a fixed height to display the image properly */
+            border-radius: 8px 8px 0 0; /* Round top corners */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
         }
         section {
             padding: 20px;
@@ -23,38 +48,44 @@
         footer {
             text-align: center;
             padding: 10px;
-            background: #f4f4f4;
+            font-size: 0.9em;
+            color: #777;
         }
         a {
             color: #4CAF50;
             text-decoration: none;
         }
+        ul {
+            padding-left: 20px; /* Add indentation for the list items */
+        }
+        li {
+            margin-bottom: 10px; /* Add space between list items */
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your App Support Page</h1>
-        <p>How can we help you?</p>
-    </header>
-    <section>
-        <h2>Frequently Asked Questions</h2>
-        <ul>
-            <li><strong>How do I reset my password?</strong><br>
-                Navigate to <i>Settings > Account > Reset Password</i> in the app.
-            </li>
-            <li><strong>How do I report a bug?</strong><br>
-                Email us at <a href="mailto:support@yourapp.com">support@yourapp.com</a>.
-            </li>
-        </ul>
-        <h2>Contact Us</h2>
-        <p>If you need further assistance, contact us:</p>
-        <ul>
-            <li>Email: <a href="mailto:support@yourapp.com">support@yourapp.com</a></li>
-            <li>Facebook: <a href="https://facebook.com/YourAppPage" target="_blank">Your App's Facebook Page</a></li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2025 Your App Name. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Welcome to Fruits Pop Support Page</h1>
+            <p>How can we help you?</p>
+        </header>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li><strong>How do I report a bug?</strong><br>
+                    Email us at <a href="mailto:support@biglime.net">support@biglime.net</a>.
+                </li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>If you need further assistance, contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:support@biglime.net">support@biglime.net</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61572485306248" target="_blank">Fruits Pop's Facebook Fan Page</a></li>
+            </ul>
+        </section>
+        <footer>
+            <p>&copy; 2025 Fruits Pop. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
